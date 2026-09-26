@@ -14,8 +14,8 @@ jobs:
       - name: Extract project
         run: |
           mkdir project
-base64 -d android_project_bundle.txt > project.zip
-unzip -q project.zip -d project
+          base64 -d android_project_bundle.txt > project.zip
+          unzip -q project.zip -d project
 
       - name: Set up Java
         uses: actions/setup-java@v4
